@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Haircuts</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #FFD700;
+}
+
+.hero p {
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: black;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.hero p {
+  color: #ffffff !important;
+  opacity: 0.9;
+  font-size: 16px;
+}
+<p style="text-align:center; color:#aaa; margin-top:10px;">
+Trusted by clients across Lusaka ⭐⭐⭐⭐⭐
+</p>
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 30px;
+  background: linear-gradient(45deg,#FFD700,#c9a100);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SERVICES */
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  color: #FFD700;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: grid;
+  gap: 20px;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card p {
+  color: #bbb;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  background: rgba(255,255,255,0.05);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* INFO */
+.info {
+  padding: 40px;
+  text-align: center;
+  color: #bbb;
+}
+
+/* FOOTER */
+.footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+}
+
+/* FLOAT BUTTON */
+.float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+<section class="why">
+  <h2>Why Choose Us</h2>
+
+  <div class="features">
+    <div>✔ Clean & Professional Service</div>
+    <div>✔ Skilled Barbers</div>
+    <div>✔ Fast Booking via WhatsApp</div>
+  </div>
+</section>
+
+.float:hover {
+  transform: scale(1.1);
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Look Sharp. Stay Fresh.</h1>
+  <p>Premium barber services in Lusaka. Book your cut in seconds.</p>
+
+  <a href="https://wa.me/260772503680?text=Hi%2C%20I%20want%20to%20book%20a%20haircut" target="_blank" class="cta-btn">
+    Book on WhatsApp
+  </a>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Services</h2>
+
+  <div class="services-container">
+
+    <div class="service-card">
+      <h3>Fade</h3>
+      <p>K50 clean fade haircut</p>
+      <a href="https://wa.me/260772503680?text=Fade%20booking" target="_blank" class="btn">Book</a>
+    </div>
+
+    <div class="service-card">
+      <h3>Beard Trim</h3>
+      <p>K25 beard trim</p>
+      <a href="https://wa.me/260772503680?text=Beard%20trim" target="_blank" class="btn">Book</a>
+    </div>
+
+    <div class="service-card">
+      <h3>Dreadlocks</h3>
+      <p>K200 dreadlocks</p>
+      <a href="https://wa.me/260772503680?text=Dreadlocks" target="_blank" class="btn">Book</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-container">
+    <img src="fade.jpg">
+    <img src="image(5).jpeg">
+    <img src="image(6).jpeg">
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>What Clients Say</h2>
+
+  <div class="testimonial">
+    <p>🔥 Best barber in Lusaka. Clean fades every time.</p>
+  </div>
+
+  <div class="testimonial">
+    <p>⭐ Professional service. I always come back.</p>
+  </div>
+
+</section>
+
+<!-- INFO -->
+<section class="info">
+  <p>📍 Lusaka</p>
+  <p>🕒 Open: 08:00 - 20:00</p>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2026 Fresh Haircuts</p>
+</div>
+
+<a href="https://wa.me/260772503680?text=Hi%20I%20want%20to%20book%20a%20beard%20trim" target="_blank" class="book-btn">
+  Book
+</a>
+
+</body>
+</html>
